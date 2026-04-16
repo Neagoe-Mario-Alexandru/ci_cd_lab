@@ -5,7 +5,7 @@ metadata:
   labels:
     app: go-simple-webserver
 spec:
-  replicas: 2
+  replicas: 10
   selector:
     matchLabels:
       app: go-simple-webserver
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/Neagoe-Mario-Alexandru/ci_cd_lab:latest
+          image: ghcr.io/neagoe-mario-alexandru/ci_cd_lab:latest
           ports:
             - containerPort: 8080
